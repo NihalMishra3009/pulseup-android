@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-140dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="430dp"
+            android:layout_height="292dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="-43dp"
+            android:src="@drawable/sign_in_rafiki" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/lexend"
+            android:gravity="center"
+            android:text="Register Now !"
+            android:textColor="@color/tett"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/good_name"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_rec"
+            android:drawableStart="@drawable/silhouette_person_icon"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/lexend"
+            android:theme="@style/EditTextCursorColor2"
+            android:hint="Enter your good name"
+            android:inputType="textPersonName"
+            android:paddingStart="20dp"
+            android:textColor="@color/tett"
+            android:textColorHint="#6B135374"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:theme="@style/EditTextCursorColor2"
+            android:background="@drawable/round_rec"
+            android:drawableStart="@drawable/envelope_icon"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/lexend"
+            android:hint="Enter your E-mail id"
+            android:inputType="textEmailAddress"
+            android:paddingStart="20dp"
+            android:textColor="@color/tett"
+            android:textColorHint="#6B135374"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <EditText
+            android:id="@+id/pass_word"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:theme="@style/EditTextCursorColor2"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_rec"
+            android:drawableStart="@drawable/padlock_black_icon"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/lexend"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:paddingStart="20dp"
+            android:textColor="@color/tett"
+            android:textColorHint="#6B135374"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/tac_checkl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:buttonTint="@color/checkbox_color"
+            android:fontFamily="@font/lexend"
+            android:text="I have read and agree above terms and conditions"
+            android:textColor="@color/tett"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            >
+
+        <Button
+            android:id="@+id/register_but"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/tett"
+            android:fontFamily="@font/lexend"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_register"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:indeterminateTint="@color/tett"
+                android:indeterminateTintMode="src_in"/>
+
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/go_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lexend"
+            android:gravity="center"
+            android:text="Already registered in Marty ?"
+            android:textColor="@color/tett"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

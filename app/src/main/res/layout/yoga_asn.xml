@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#EBEBEB"
+    tools:context=".yoga_asanas_j">
+
+    <!-- Toolbar -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="0dp"
+        android:background="@color/tett"
+        android:gravity="center"
+        app:navigationIcon="@drawable/chevron_direction_left_white_icon"
+        app:title="Daily Asanas"
+        app:titleTextAppearance="@style/Base.Theme.MartyApp"
+        app:titleTextColor="@color/white" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topToolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/daayy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/tett"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/lexend"/>
+
+                <ProgressBar
+                    android:id="@+id/pb_daayy"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:indeterminateTint="@color/tett"
+                    />
+
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="1. Shirsasana (Headstand) -"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+
+                <ImageView
+                    android:id="@+id/exercise1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/yog_shirsasana"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="Steps -"
+                android:textColor="#545454"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Balance on your head and forearms."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Keep legs straight and aligned vertically."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Benefits -"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Improves focus and mental clarity."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Strengthens shoulders and core."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="2. Padmasana (Lotus Pose) –"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+
+            <ImageView
+                android:id="@+id/exercise2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yog_padmasana"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="Steps -"
+                android:textColor="#545454"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Sit cross-legged with feet on opposite thighs."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Keep your back straight and hands on knees."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Benefits -"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Improves posture and spinal strength."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Enhances concentration and mental calmness."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="3. Vajrasana (Thunderbolt Pose) –"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+
+            <ImageView
+                android:id="@+id/exercise3"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yog_vajrasana"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="Steps -"
+                android:textColor="#545454"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Sit on your heels with knees together."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Keep your back straight and hands on thighs."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Benefits -"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Aids digestion and relieves bloating."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Strengthens leg muscles and joints."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="4. Bhujangasana (Cobra Pose) –"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+
+            <ImageView
+                android:id="@+id/exercise4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yog_bhujangasana"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="Steps -"
+                android:textColor="#545454"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Lie on your stomach, hands under shoulders."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Lift your chest while keeping elbows slightly bent."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Benefits -"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Strengthens the spine and back muscles."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Opens up the chest and improves breathing."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="5. Sarvangasana (Shoulder Stand) –"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+
+            <ImageView
+                android:id="@+id/exercise5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yog_sarvangasana"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="Steps -"
+                android:textColor="#545454"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Lie on your back, lift legs and back."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Support your back with your hands."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Benefits -"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Boosts blood circulation to the brain."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Strengthens core and improves balance."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="6. Sukhasana (Easy Pose) –"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+
+            <ImageView
+                android:id="@+id/exercise6"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yog_sukhasana"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="Steps -"
+                android:textColor="#545454"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Sit cross-legged with back straight."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Hands resting on knees in a relaxed position."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Benefits -"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Promotes relaxation and mental peace."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Improves posture and flexibility."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="7. Shavasana (Corpse Pose) –"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+
+            <ImageView
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yog_shavasana"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="Steps -"
+                android:textColor="#545454"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Lie flat on your back, arms relaxed."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Keep your feet slightly apart and eyes closed."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Benefits -"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Relaxes the mind and body."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Reduces stress and improves sleep."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

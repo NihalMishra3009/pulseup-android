@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#EBEBEB"
+    tools:context=".schedules">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/tett"
+        app:title="Home Workout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/chevron_direction_left_white_icon"
+        app:titleTextAppearance="@style/Base.Theme.MartyApp"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topToolbar"
+        android:layout_alignParentBottom="true"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#00FFFFFF"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="470dp"
+                        android:layout_height="240dp"
+                        android:src="@drawable/fitness_tracker_amico" />
+
+                    <Button
+                        android:id="@+id/daily_exercises"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#CFF3FF"
+                        android:fontFamily="@font/lexend"
+                        android:text="Daily activity"
+                        android:textColor="@color/tett"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00FFFFFF"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="240dp"
+                        android:src="@drawable/online_personal_trainer_pana" />
+
+                    <Button
+                        android:id="@+id/video_tutorials"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#CFF3FF"
+                        android:fontFamily="@font/lexend"
+                        android:text="Video tutorials"
+                        android:textColor="@color/tett"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

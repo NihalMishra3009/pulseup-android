@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for Night Mode -->
+    <style name="Base.Theme.MartyApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#ABCBD7</item>
+        <item name="android:navigationBarColor">#ABCBD7</item>
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomSpinner" parent="@android:style/Widget.Spinner.DropDown">
+        <item name="android:background">@drawable/spinner_arrow</item>
+        <item name="android:textColor">@color/tett</item>
+    </style>
+
+
+    <style name="EditTextCursorColor">
+        <item name="android:textCursorDrawable">@drawable/cursor_color</item>
+        <item name="android:textSelectHandleLeft">@drawable/caret_up_white_icon</item>
+        <item name="android:textSelectHandleRight">@drawable/caret_up_white_icon</item>
+        <item name="android:textSelectHandle">@drawable/caret_up_white_icon</item>
+    </style>
+
+    <style name="EditTextCursorColor2">
+        <item name="android:textCursorDrawable">@drawable/cursor_color2</item>
+        <item name="android:textSelectHandleLeft">@drawable/caret_up_tett_icon</item>
+        <item name="android:textSelectHandleRight">@drawable/caret_up_tett_icon</item>
+        <item name="android:textSelectHandle">@drawable/caret_up_tett_icon</item>
+    </style>
+    <!-- Application Theme -->
+    <style name="Theme.MartyApp" parent="Base.Theme.MartyApp" />
+
+    <!-- Splash Theme (Fixes Black Blink) -->
+
+</resources>

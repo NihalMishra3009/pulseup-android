@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="text">#FFFFFF</color>
+    <color name="tett">#175F75</color>
+    <color name="ttt">#979797</color>
+    <color name="tott">#BCE2EF</color>
+    <color name="bad">#C70000</color>
+    <color name="good">#D18B00</color>
+    <color name="excellent">#007506</color>
+
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Color when checked -->
+    <item android:state_checked="true" android:color="@color/tett" />
+    <!-- Default color when not checked -->
+    <item android:color="@android:color/darker_gray" />
+</selector>

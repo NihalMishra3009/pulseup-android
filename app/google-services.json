@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1045189638441",
+    "project_id": "marty-app-b6b77",
+    "storage_bucket": "marty-app-b6b77.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045189638441:android:0b1ed9c202c1a5b7e71f38",
+        "android_client_info": {
+          "package_name": "com.example.martyapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAazRSiT9cFssSMmvAEtX7kNKnHtqFS2sM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

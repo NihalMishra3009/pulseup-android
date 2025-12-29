@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Pulse Up</string>
+    <string name="navigation_drawer_open">Open Navigation</string>
+    <string name="navigation_drawer_close">Close Navigation</string>
+    `
+    <string-array name="activity_levels">
+        <item>Sedentary (Little to no exercise)</item>
+        <item>Lightly active (Light exercise 1-3 days a week)</item>
+        <item>Moderately active (Moderate exercise 3-5 days a week)</item>
+        <item>Very active (Hard exercise 6-7 days a week)</item>
+    </string-array>
+
+    <string-array name="speed_options">
+        <item>0.5x</item>
+        <item>1x</item>
+        <item>1.5x</item>
+        <item>2x</item>
+    </string-array>
+
+    <string-array name="theme_array">
+        <item>Forest Retreat</item>
+        <item>Beach Serenity</item>
+        <item>Mountain Bliss</item>
+        <item>Cosmic Calm</item>
+    </string-array>
+</resources>

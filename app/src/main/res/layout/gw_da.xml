@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#EBEBEB"
+    tools:context=".gw_da_j">
+
+    <!-- Toolbar -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="0dp"
+        android:background="@color/tett"
+        android:gravity="center"
+        app:navigationIcon="@drawable/chevron_direction_left_white_icon"
+        app:title="Daily Exercises"
+        app:titleTextAppearance="@style/Base.Theme.MartyApp"
+        app:titleTextColor="@color/white" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topToolbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/daayy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/tett"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:fontFamily="@font/lexend"/>
+
+                <ProgressBar
+                    android:id="@+id/pb_daayy"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible"
+                    android:indeterminateTint="@color/tett"
+                    />
+
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="1. Both Arm Dumbbell Row –"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+
+                <ImageView
+                    android:id="@+id/exercise1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/botharmdumblerow_s1"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Helps strengthen your upper back and improve posture by engaging your lats, traps, and rhomboids. It also enhances grip strength and overall pulling power."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                tools:ignore="ExtraText">
+
+                <TextView
+                    android:id="@+id/wp1"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:text="Watch Preview"
+                    android:background="@drawable/cardviewborder"
+                    android:textColor="@color/tett"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#CFF3FF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/lexend" />
+
+                <TextView
+                    android:id="@+id/startex1"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Start Exercise"
+                    android:background="@drawable/cardviewborder"
+                    android:textColor="@color/tett"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#CFF3FF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/lexend" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="2. Chin-ups –"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+
+            <ImageView
+                android:id="@+id/exercise2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chinups_s2"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Great for building upper body strength, especially in the biceps and back muscles. It also improves grip strength and overall body control."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                tools:ignore="ExtraText">
+
+                <TextView
+                    android:id="@+id/wp2"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:text="Watch Preview"
+                    android:background="@drawable/cardviewborder"
+                    android:textColor="@color/tett"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#CFF3FF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/lexend" />
+
+                <TextView
+                    android:id="@+id/startex2"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Start Exercise"
+                    android:background="@drawable/cardviewborder"
+                    android:textColor="@color/tett"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#CFF3FF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/lexend" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="3. Dumbbell Lateral Raises –"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+
+            <ImageView
+                android:id="@+id/exercise3"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dumblelateralraises_s3"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Targets the side of your shoulders, helping to create a broader and more defined look. It also improves shoulder strength and stability."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                tools:ignore="ExtraText">
+
+                <TextView
+                    android:id="@+id/wp3"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:text="Watch Preview"
+                    android:background="@drawable/cardviewborder"
+                    android:textColor="@color/tett"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#CFF3FF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/lexend" />
+
+                <TextView
+                    android:id="@+id/startex3"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Start Exercise"
+                    android:background="@drawable/cardviewborder"
+                    android:textColor="@color/tett"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#CFF3FF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/lexend" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="4. Dumbbell Overhead Squats –"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+
+            <ImageView
+                android:id="@+id/exercise4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dumbleoverheadsquats_s1"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Strengthens your legs, core, and shoulders while improving balance and flexibility. It also enhances overall coordination and stability."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                tools:ignore="ExtraText">
+
+                <TextView
+                    android:id="@+id/wp4"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:text="Watch Preview"
+                    android:background="@drawable/cardviewborder"
+                    android:textColor="@color/tett"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#CFF3FF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/lexend" />
+
+                <TextView
+                    android:id="@+id/startex4"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Start Exercise"
+                    android:background="@drawable/cardviewborder"
+                    android:textColor="@color/tett"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#CFF3FF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/lexend" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="5. Dumbbell Chest Press –"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+
+            <ImageView
+                android:id="@+id/exercise5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dumblechestpress_s1"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Builds strength in the chest, shoulders, and triceps, improving pushing power. It also helps develop muscle balance and upper body stability."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                tools:ignore="ExtraText">
+
+                <TextView
+                    android:id="@+id/wp5"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:text="Watch Preview"
+                    android:background="@drawable/cardviewborder"
+                    android:textColor="@color/tett"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#CFF3FF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/lexend" />
+
+                <TextView
+                    android:id="@+id/startex5"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Start Exercise"
+                    android:background="@drawable/cardviewborder"
+                    android:textColor="@color/tett"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#CFF3FF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/lexend" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="6. Overhead Tricep Pushdown –"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="204dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/white"
+            >
+
+
+            <ImageView
+                android:id="@+id/exercise6"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/overheadtriceppushdown_s1"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Focuses on the triceps, helping to tone and strengthen the back of your arms. It also improves arm definition and supports pushing movements."
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_gravity="center"
+                android:textColor="#545454"
+                tools:ignore="HardcodedText" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                tools:ignore="ExtraText">
+
+                <TextView
+                    android:id="@+id/wp6"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:text="Watch Preview"
+                    android:background="@drawable/cardviewborder"
+                    android:textColor="@color/tett"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#CFF3FF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/lexend" />
+
+                <TextView
+                    android:id="@+id/startex6"
+                    android:layout_width="140dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Start Exercise"
+                    android:background="@drawable/cardviewborder"
+                    android:textColor="@color/tett"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#CFF3FF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/lexend" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

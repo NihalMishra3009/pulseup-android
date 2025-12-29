@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/splashnew"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <!-- Circular Lottie Animation around Logo -->
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/applogonav"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-150dp"
+        android:contentDescription="App Logo"
+        android:elevation="5dp"/>
+
+    <!-- Bottom Lottie Animation -->
+
+    <ImageView
+        android:layout_width="700px"
+        android:layout_height="100px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="200px"
+        android:layout_above="@+id/bottomAnimation"
+        android:layout_below="@+id/appLogo"
+        android:layout_marginBottom="-90dp"
+        android:src="@drawable/appnamelo" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/bottomAnimation"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/appLogo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-170dp"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        app:lottie_renderMode="hardware" />
+
+</RelativeLayout>

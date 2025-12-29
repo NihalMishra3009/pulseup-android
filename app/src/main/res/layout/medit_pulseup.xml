@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#0F3D4B"
+    tools:context=".medit_j">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-200dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:alpha="0.2"
+        android:src="@drawable/meditmain" />
+
+    <LinearLayout
+        android:id="@+id/layoutControls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="top"
+        android:layout_gravity="center"
+        >
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/berkshire_swash"
+        android:text="Meditation Space"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Music Selection Section -->
+    <TextView
+        android:id="@+id/themeii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Themes :"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:textColor="@color/white"
+        android:paddingBottom="8dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerMusic"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:entries="@array/theme_array"
+        android:layout_height="40dp"
+        android:background="@drawable/spinner_item_background"
+        android:textColor="@color/tett"
+        style="@style/CustomSpinner"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Timer Selection Section -->
+    <TextView
+        android:id="@+id/durationee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duration :"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"/>
+
+<LinearLayout
+    android:id="@+id/timerLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    >
+
+    <Button
+        android:id="@+id/bt5min"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/white"
+        android:text="5 min"
+        android:textColor="@color/tett"
+        android:textSize="14sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:id="@+id/bt10min"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/white"
+        android:text="10 min"
+        android:textColor="@color/tett"
+        android:textSize="14sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        />
+
+
+    <Button
+        android:id="@+id/bt20min"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/white"
+        android:text="20 min"
+        android:textColor="@color/tett"
+        android:textSize="14sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timerLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/bt30min"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/white"
+                android:text="30 min"
+                android:textColor="@color/tett"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                />
+
+            <Button
+                android:id="@+id/bt45min"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/white"
+                android:text="45 min"
+                android:textColor="@color/tett"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                />
+
+
+            <Button
+                android:id="@+id/bt60min"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/white"
+                android:text="60 min"
+                android:textColor="@color/tett"
+                android:textSize="14sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="00:00"
+            android:layout_below="@+id/li"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="140dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="Start"
+            android:backgroundTint="@color/tott"
+            android:textColor="@color/tett"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

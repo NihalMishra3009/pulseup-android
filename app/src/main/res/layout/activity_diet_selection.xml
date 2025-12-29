@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#EBEBEB"
+    tools:context=".DietSelectionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="0dp"
+        android:background="@color/tett"
+        android:gravity="center"
+        app:navigationIcon="@drawable/chevron_direction_left_white_icon"
+        app:title="Daily Meals"
+        app:titleTextAppearance="@style/Base.Theme.MartyApp"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topToolbar"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#00FFFFFF"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:padding="16dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_height="200dp"
+                android:src="@drawable/shredmode_img"/>
+
+    <Button
+        android:id="@+id/btnShredMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shred Mode"
+        android:textSize="14sp"
+        android:backgroundTint="#CFF3FF"
+        android:textColor="@color/tett" />
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#00FFFFFF"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:padding="16dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_height="200dp"
+                android:src="@drawable/bulkmode_img"/>
+
+    <Button
+        android:id="@+id/btnBulkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bulk Mode"
+        android:textSize="14sp"
+        android:backgroundTint="#CFF3FF"
+        android:textColor="@color/tett" />
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

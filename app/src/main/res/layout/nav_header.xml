@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:paddingTop="55dp"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="155px"
+                android:layout_height="155px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/drawer_pulogo"
+                />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="2dp"
+            android:gravity="left"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PULSE UP : The fitness app"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/tett"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peak Performance, Pure Power !!"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/tett"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#EBEBEB"
+            />
+
+        <!-- Profile Section (Left Side) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="left">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/_45857007_307ce493_b254_4b2d_8ba4_d12c080d6651" />
+
+        <!-- Username & Email -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:paddingStart="9dp">
+
+            <TextView
+                android:id="@+id/usernamedrawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/tett"/>
+
+            <TextView
+                android:id="@+id/user_email_drawer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email@example.com"
+                android:textSize="12sp"
+                android:textColor="#B7175F75"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <!-- App Logo (Right Side) -->
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#EBEBEB"
+        />
+
+</LinearLayout>

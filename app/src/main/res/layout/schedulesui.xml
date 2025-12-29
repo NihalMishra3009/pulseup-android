@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#EBEBEB"
+    tools:context=".schedules">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/tett"
+        app:title="Schedules"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/chevron_direction_left_white_icon"
+        app:titleTextAppearance="@style/Base.Theme.MartyApp"
+        android:gravity="center"/>
+
+
+    <!-- ScrollView to enable scrolling -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topToolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="30dp">
+
+            <!-- Header Text -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:id="@+id/daayy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wanna change schedule ?"
+                        android:textColor="@color/tett"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/lexend"/>
+
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Early bird"
+                    android:textColor="@color/tett"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/white"
+                >
+
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/early_bird"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Boost your productivity and mental clarity by starting your day early! Rise and shine for a healthier, more focused you."
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="center"
+                    android:textColor="#545454"
+                    tools:ignore="HardcodedText" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    tools:ignore="ExtraText">
+
+                    <Button
+                        android:id="@+id/viewbut1"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="View"
+                        android:textColor="@color/tett"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#CFF3FF"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/lexend" />
+
+                    <Button
+                        android:id="@+id/setTimetable1"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Set"
+                        android:textColor="@color/tett"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#CFF3FF"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/lexend" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Night owl"
+                    android:textColor="@color/tett"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/white"
+                >
+
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/night_owl"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unleash your creativity and focus when the world sleeps! Own the night and maximize your late-hour potential."
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="center"
+                    android:textColor="#545454"
+                    tools:ignore="HardcodedText" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    tools:ignore="ExtraText">
+
+                    <Button
+                        android:id="@+id/viewbut2"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="View"
+                        android:textColor="@color/tett"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#CFF3FF"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/lexend" />
+
+                    <Button
+                        android:id="@+id/setTimetable2"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Set"
+                        android:textColor="@color/tett"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#CFF3FF"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/lexend" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Balanced routine"
+                    android:textColor="@color/tett"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@color/white"
+                >
+
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/balanced_routine"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Find harmony with a consistent routine! Stay energized and stress-free with a well-balanced lifestyle."
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="center"
+                    android:textColor="#545454"
+                    tools:ignore="HardcodedText" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp"
+                    tools:ignore="ExtraText">
+
+                    <Button
+                        android:id="@+id/viewbut3"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:text="View"
+                        android:textColor="@color/tett"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#CFF3FF"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/lexend" />
+
+                    <Button
+                        android:id="@+id/setTimetable3"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Set"
+                        android:textColor="@color/tett"
+                        android:textSize="14sp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="#CFF3FF"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_alignParentBottom="true"
+                        android:fontFamily="@font/lexend" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

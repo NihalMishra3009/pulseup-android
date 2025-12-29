@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#EBEBEB"
+    tools:context=".stepcounting">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/tett"
+        app:title="Step counter"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/chevron_direction_left_white_icon"
+        app:titleTextAppearance="@style/Base.Theme.MartyApp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+    <!-- Container with Circular Border -->
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="290dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/circle_borderring"
+        android:padding="20dp">
+
+        <!-- Step Counter Display -->
+        <TextView
+            android:id="@+id/tv_steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="50sp"
+            android:textColor="@color/tett"
+            />
+
+        <!-- Spacing -->
+        <View android:layout_width="match_parent" android:layout_height="20dp"/>
+
+        <!-- Stop/Resume Button -->
+        <Button
+            android:id="@+id/btn_stop_resume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:textSize="16sp"
+            android:textColor="@color/tett"
+            android:backgroundTint="#CFF3FF"
+            />
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_reset"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/white"
+            android:padding="10dp"
+            android:text="Reset score"
+            android:textColor="@color/tett"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background color -->
+    <item android:drawable="@color/white" />
+
+    <!-- Center the Image and Prevent Stretching -->
+    <item>
+        <inset
+            android:drawable="@drawable/sppulogo"
+            android:insetTop="80dp"
+            android:insetBottom="80dp"
+            android:insetLeft="30dp"
+            android:insetRight="30dp"/>
+    </item>
+
+</layer-list>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EBEBEB"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".nayachabot_varvanta">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/tett"
+        app:title="Pulse Chat"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/chevron_direction_left_white_icon"
+        app:titleTextAppearance="@style/Base.Theme.MartyApp"
+        android:gravity="center"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/topToolbar"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_layout"
+        android:clipToPadding="false"
+        android:paddingBottom="0dp" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="-45dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:drawableTop="@drawable/_015765_195"
+        android:text="Welcome to PulseChat\nTry it out now!"
+        android:textColor="@color/tett"
+        android:textSize="20sp"
+        android:visibility="visible"
+        tools:ignore="TextContrastCheck" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/message_edit_text"
+            android:layout_width="346dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#6B135374"
+            android:textSize="16sp"
+            android:theme="@style/EditTextCursorColor2"
+            android:textColor="@color/tett"
+            android:layout_toStartOf="@id/send_button"
+            android:background="@drawable/rounded_corner"
+            android:hint="Ask related to fitness"
+            android:padding="16dp" />
+
+        <ImageButton
+            android:id="@+id/send_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:rotation="45"
+            android:src="@drawable/send_icon"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </RelativeLayout>
+
+</RelativeLayout>

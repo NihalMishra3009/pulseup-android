@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#EBEBEB"
+    tools:context=".DietPlanActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="0dp"
+        android:background="@color/tett"
+        android:gravity="center"
+        app:navigationIcon="@drawable/chevron_direction_left_white_icon"
+        app:title="Daily Meals"
+        app:titleTextAppearance="@style/Base.Theme.MartyApp"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topToolbar"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
+
+    <!-- Mode Selection Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+       >
+
+        <Button
+            android:id="@+id/btnShred"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/tott"
+            android:text="Shred Mode"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:gravity="center"
+
+            android:textColor="@color/tett" />
+
+        <Button
+            android:id="@+id/btnBulk"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="Bulk Mode"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:backgroundTint="@color/tott"
+            android:textColor="@color/tett" />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Morning Breakfast"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="A healthy meal packed with high protein, low carbs, and moderate fat to keep you full and energized all morning."
+                android:textColor="#545454"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+            <!-- Meal Timing Buttons -->
+            <TextView
+                android:id="@+id/but1"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardviewborder"
+                android:backgroundTint="@color/tott"
+                android:gravity="center"
+                android:text="Checkout Meal"
+                android:textColor="@color/tett"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Mid-Morning Snacks"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="A light snack with very few carbs to keep you going without slowing you down."
+                android:textColor="#545454"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+            <!-- Meal Timing Buttons -->
+            <TextView
+                android:id="@+id/but2"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardviewborder"
+                android:backgroundTint="@color/tott"
+                android:gravity="center"
+                android:text="Checkout Meal"
+                android:textColor="@color/tett"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Lunch"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="A balanced meal with lean protein and fiber-rich veggies to keep you full and energized."
+                android:textColor="#545454"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+            <!-- Meal Timing Buttons -->
+            <TextView
+                android:id="@+id/but3"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardviewborder"
+                android:backgroundTint="@color/tott"
+                android:gravity="center"
+                android:text="Checkout Meal"
+                android:textColor="@color/tett"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Pre-Workout Meal"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="A small bite with some carbs and protein to fuel your workout."
+                android:textColor="#545454"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+            <!-- Meal Timing Buttons -->
+            <TextView
+                android:id="@+id/but4"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardviewborder"
+                android:backgroundTint="@color/tott"
+                android:gravity="center"
+                android:text="Checkout Meal"
+                android:textColor="@color/tett"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Post-Workout Meal"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="A high-protein meal with very few carbs to help your muscles recover."
+                android:textColor="#545454"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+            <!-- Meal Timing Buttons -->
+            <TextView
+                android:id="@+id/but5"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardviewborder"
+                android:backgroundTint="@color/tott"
+                android:gravity="center"
+                android:text="Checkout Meal"
+                android:textColor="@color/tett"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Dinner"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="A low-carb, high-protein meal to end your day on a healthy note."
+                android:textColor="#545454"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+            <!-- Meal Timing Buttons -->
+            <TextView
+                android:id="@+id/but6"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardviewborder"
+                android:backgroundTint="@color/tott"
+                android:gravity="center"
+                android:text="Checkout Meal"
+                android:textColor="@color/tett"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Before Bed"
+                android:textColor="@color/tett"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="A light protein snack that digests slowly and supports overnight recovery."
+                android:textColor="#545454"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+            <!-- Meal Timing Buttons -->
+            <TextView
+                android:id="@+id/but7"
+                android:layout_width="160dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardviewborder"
+                android:backgroundTint="@color/tott"
+                android:gravity="center"
+                android:text="Checkout Meal"
+                android:textColor="@color/tett"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

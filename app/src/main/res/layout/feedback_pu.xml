@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".feedbackj">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/tett"
+        app:title="Feedback"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/chevron_direction_left_white_icon"
+        app:titleTextAppearance="@style/Base.Theme.MartyApp"
+        android:gravity="center"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topToolbar"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="top"
+        android:gravity="center"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend"
+        android:text="How do you feel using our app ?"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/tett" />
+
+    <!-- Emoji Image -->
+    <ImageView
+        android:id="@+id/emojiImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:contentDescription="Emoji Feedback"
+        android:src="@drawable/grinning_face_with_big_eyes_emoji_icon" />
+
+    <!-- SeekBar for Feedback -->
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:progressBackgroundTint="#D50F5064"
+        android:max="2"
+        android:layout_marginLeft="20dp"
+        android:progress="1"
+        android:layout_marginRight="20dp"
+        android:progressTint="@color/tett"
+        android:splitTrack="false"
+        android:thumbTint="@color/tett" />
+
+    <!-- Feedback Labels -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textHappy"
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lexend"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="Bad"
+            android:textColor="@color/ttt" />
+
+        <TextView
+            android:id="@+id/textUnhappy"
+            android:layout_width="0dp"
+            android:fontFamily="@font/lexend"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Good"
+            android:textColor="@color/good" />
+
+        <TextView
+            android:id="@+id/textConfused"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/lexend"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Excellent"
+            android:textColor="@color/ttt" />
+    </LinearLayout>
+
+    <!-- Feedback Input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tell us more"
+        android:fontFamily="@font/lexend"
+        android:textSize="14sp"
+        android:layout_marginLeft="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/tett"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:id="@+id/feedbackInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_rec"
+        android:layout_marginLeft="25dp"
+        android:theme="@style/EditTextCursorColor2"
+        android:layout_marginRight="25dp"
+        android:textColor="@color/tett"
+        android:textColorHint="#6B135374"
+        android:paddingStart="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="start"
+        android:hint="Write your feedback here"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:minHeight="120dp"
+        android:padding="10dp"
+        android:fontFamily="@font/lexend"
+        android:textSize="14sp" />
+
+    <!-- Email Input -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email ID"
+        android:fontFamily="@font/lexend"
+        android:textSize="14sp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/tett"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp" />
+
+        <!-- Submit Button -->
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/lexend"
+            android:layout_marginRight="25dp"
+            android:paddingStart="20dp"
+            android:background="@drawable/round_rec"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/tett"
+            android:textColorHint="#6B135374"
+            android:textSize="14sp"
+            android:theme="@style/EditTextCursorColor2"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Send"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textSize="16sp"
+        android:backgroundTint="@color/tett"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:minHeight="50dp" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

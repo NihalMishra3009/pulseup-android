@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#EBEBEB"
+    tools:context=".yoga_wo_j">
+
+    <!-- Toolbar -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="0dp"
+        android:background="@color/tett"
+        android:gravity="center"
+        app:navigationIcon="@drawable/chevron_direction_left_white_icon"
+        app:title="Yoga Asanas"
+        app:titleTextAppearance="@style/Base.Theme.MartyApp"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topToolbar"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#00FFFFFF"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="270dp"
+                    android:paddingBottom="10dp"
+                    android:layout_height="240dp"
+                    android:src="@drawable/meditation_amico"/>
+
+                <Button
+                    android:id="@+id/daily_asanas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Asanas"
+                    android:fontFamily="@font/lexend"
+                    android:textColor="@color/tett"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#CFF3FF"/>
+            </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#00FFFFFF"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="270dp"
+                    android:layout_height="240dp"
+                    android:src="@drawable/webinar_pana"/>
+
+                <Button
+                    android:id="@+id/video_tutorials"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Video tutorials"
+                    android:fontFamily="@font/lexend"
+                    android:textColor="@color/tett"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#CFF3FF"/>
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

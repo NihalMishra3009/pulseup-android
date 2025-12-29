@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.martyapp">
+    <!-- Required Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Android 12+ (API 31+) Background Alarm Execution Permission -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MartyApp"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".yoga_wo_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".medit_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+
+        <activity
+            android:name=".yoga_asanas_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".diet_pu_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".DietPlanActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".DietSelectionActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".Meal1ShredActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".Meal2ShredActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".Meal3ShredActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".Meal4ShredActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".Meal5ShredActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".Meal6ShredActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".Meal7ShredActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".Meal1BulkActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".Meal2BulkActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".Meal3BulkActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".Meal4BulkActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".Meal5BulkActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".Meal6BulkActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".Meal7BulkActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+
+        <activity
+            android:name=".mainten_calorie_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+
+        <activity
+            android:name=".homeworkout_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".hw_da_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".narrowpushups_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_narrowpushups_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".jumpingjacks_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_jumpingjacks_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".squatsandbackwardlunges_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_squatsandbackwardlunges_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".bicyclecrunches_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_bicyclecrunches_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".clamshell_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_clamshell_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".halfcrunches_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_halfcrunches_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".glutekickback_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_glutekickback_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".glutebridge_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_glutebridge_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".legraises_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_legraises_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".gymworkout_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".gw_da_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".botharmdumblerow_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_botharmdumblerow_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".chinups_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_chinups_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".dumblechestpress_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_dumblechestpress_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".dumbleoverheadsquats_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_dumbleoverheadsquats_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".dumblelateralraises_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_dumblelateralraises_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".overheadtriceppushdown_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+        <activity
+            android:name=".pre_overheadtriceppushdown_j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity"/>
+
+
+        <activity
+            android:name=".stepcounting"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" /> <!-- ✅ Updated Splash Screen Activity with White Theme -->
+        <activity
+            android:name=".Splashpulse"
+            android:theme="@style/Theme.MyApp.LaunchScreen"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Register Page (Main Entry Point) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" /> <!-- Authentication and Navigation Activities -->
+        <activity
+            android:name=".login"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity
+            android:name=".dashboard"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity
+            android:name=".feedbackj"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity
+            android:name=".notifi"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+
+        <activity
+            android:name=".yvt_section"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity
+            android:name=".hwvt_section"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity
+            android:name=".gwvt_section"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity
+            android:name=".dvt_section"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".yoga_playvid"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity
+            android:name=".gw_playvid"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".hw_playvid"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".diet_playvid"
+            android:exported="false"
+            android:configChanges="orientation|screenSize"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+
+
+
+        <activity
+            android:name=".schedules"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity
+            android:name=".homepage"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".nayachabot_varvanta"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity
+            android:name=".bmimain"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity
+            android:name=".bmiactivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" /> <!-- Time Table Activities -->
+        <activity
+            android:name=".tt1j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity
+            android:name=".tt2j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <activity
+            android:name=".tt3j"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="DiscouragedApi,LockedOrientationActivity" />
+        <!-- Broadcast Receiver for Alarm -->
+        <receiver
+            android:name=".AlarmReceiver"
+            android:enabled="true"
+            android:exported="false"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".StopAlarmReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".BootReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AlarmActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:showWhenLocked="true"
+            android:turnScreenOn="true"
+            android:excludeFromRecents="true">
+        </activity>
+
+        <!-- Firebase Services (Replace with actual Firebase DB URL) -->
+
+            <meta-data
+                android:name="com.facebook.sdk.AutoInitEnabled"
+                android:value="false" />
+
+
+        <meta-data
+            android:name="com.google.firebase.database.databaseUrl"
+            android:value="https://your-database-url.firebaseio.com/" />
+        <meta-data
+            android:name="com.google.firebase.auth"
+            android:value="true" /> <!-- Preloaded Fonts Support -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
