@@ -1,4 +1,4 @@
-💪 PulseUp – AI-Powered Fitness & Wellness App
+# 💪 PulseUp – AI-Powered Fitness & Wellness App
 
 PulseUp is a smart Android-based fitness and wellness application designed to help users maintain a healthy lifestyle through guided workouts, diet planning, meditation, and AI-powered fitness assistance.
 
@@ -6,7 +6,7 @@ In today’s busy lifestyle, many individuals struggle with maintaining fitness 
 
 ---
 
-🚀 Features
+## 🚀 Features
 
 - Guided home and gym workout routines  
 - AI-powered fitness chatbot (Pulse Chat)  
@@ -18,7 +18,7 @@ In today’s busy lifestyle, many individuals struggle with maintaining fitness 
 
 ---
 
-🖥️ How It Works
+## 🖥️ How It Works
 
 - Users register and log in securely using Firebase Authentication  
 - Workout, diet, and meditation modules are accessed from the dashboard  
@@ -28,7 +28,7 @@ In today’s busy lifestyle, many individuals struggle with maintaining fitness 
 
 ---
 
-📌 Notes
+## 📌 Notes
 
 - Designed to support both beginners and intermediate fitness users  
 - Focuses on accessibility, guidance, and user engagement  
@@ -37,7 +37,7 @@ In today’s busy lifestyle, many individuals struggle with maintaining fitness 
 
 ---
 
-👨‍💻 Contributors
+## 👨‍💻 Contributors
 
 - Nihal Mishra  
 - Aditya Kumkar  
@@ -45,13 +45,13 @@ In today’s busy lifestyle, many individuals struggle with maintaining fitness 
 
 ---
 
-🎓 Academic Context
+## 🎓 Academic Context
 
 Developed as part of the **Diploma in Information Technology** curriculum under the  
 **Maharashtra State Board of Technical Education (MSBTE)** for the academic year **2024–2025**.
 
 ---
 
-🔒 Disclaimer
+## 🔒 Disclaimer
 
 This project was developed for academic and learning purposes. Some features, including AI services and backend configurations, may require updates or reconfiguration for production-level deployment.
